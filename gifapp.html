@@ -5,10 +5,9 @@
   <meta charset="utf-8">
   <title>Gif Generator</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <style type="text/css">
     button,
-    div,
     form,
     input {
       margin: 10px;
@@ -19,30 +18,43 @@
  src="https://code.jquery.com/jquery-3.1.1.min.js"
  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
  crossorigin="anonymous"></script>
-  <script type ="text/javascript" src="gifapp.js"></script>
+  <script type ="text/javascript" src="assets/javascript/gifapp.js"></script>
 </head>
 
 <body>
-  <header>Gifs in a Jiffy</header>
-  <div id="button-group">
-    <button class="gif-button" data-topic="Pizza">
+  <header class="jumbotron"><h1>Gifs in a Jif!</h1></header>
+  <div id="button-group" class="col-xs-12">
+    <button " class="btn gif-button" data-topic="Pizza">
       Pizza
     </button>
-    <button class="gif-button" data-topic="Donuts">
+    <button class="btn gif-button" data-topic="Donuts">
       Donuts
     </button>
-    <button class="gif-button" data-topic="Bacon">
+    <button class="btn gif-button" data-topic="Bacon">
       Bacon
     </button>
-  
+    <button class="btn gif-button" data-topic="Cats">
+      Cats
+    </button>
+    <button class="btn gif-button" data-topic="Dogs">
+      Dogs
+    </button>
   </div>
-  <div>
+
+  <div id="gifs" class="col-xs-12 col-md-8"></div>
+
+  <div class="col-xs-12 col-md-3 panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Search for more!</h3>
+  </div>
+  <div class="panel-body">
     <form id="gifphrase-form">
       <label for="gif-input">Search</label>
       <input type="text" id="gif-input"><br>
       <input id="add-gif" type="submit" value="Search">
     </form>
   </div>
-  <div id="gifs"></div>
+</div>
+  
 </body>
 </html>
