@@ -1,5 +1,3 @@
- var buttons = [];
-
   $(document).on("click", ".gif-button", function() {
     var search =  $(this).attr("data-topic");
     console.log(search);
@@ -38,7 +36,8 @@
 	        $("#gifs").prepend(gifDiv);
 		}
 	});
-    });
+   });
+
 
 $(document).on("click", ".image", function() {
 	console.log(this);
