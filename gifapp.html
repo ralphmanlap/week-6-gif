@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gif Generator</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+
+  <script
+ src="https://code.jquery.com/jquery-3.1.1.min.js"
+ integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+ crossorigin="anonymous"></script>
+  <script type ="text/javascript" src="gifapp.js"></script>
+</head>
+
+<body>
+  <header>Gifs in a Jiffy</header>
+  <div id="button-group">
+    <button class="gif-button" data-topic="Pizza">
+      Pizza
+    </button>
+    <button class="gif-button" data-topic="Donuts">
+      Donuts
+    </button>
+    <button class="gif-button" data-topic="Bacon">
+      Bacon
+    </button>
+  
+  </div>
+  <div>
+    <form id="gifphrase-form">
+      <label for="gif-input">Search</label>
+      <input type="text" id="gif-input"><br>
+      <input id="add-gif" type="submit" value="Search">
+    </form>
+  </div>
+  <div id="gifs"></div>
+</body>
+</html>
